@@ -15,3 +15,15 @@ TEST(TestCaseName, TestName_MINUS21) {
 	Cal* cal = new Cal();
 	EXPECT_EQ(-3, cal->getMinus(2, 5));
 }
+
+TEST(TestCaseName, ZegopTest) {
+	EXPECT_EQ(4, Cal().getZegop(2));
+}
+
+TEST(TestCaseName, DivideTest) {
+	EXPECT_EQ(2, Cal().getDivide(4, 2));
+}
+
+TEST(TestCaseName, DivideByZeroTest) {
+	EXPECT_EQ(0, Cal().getDivide(4, 0));
+}
