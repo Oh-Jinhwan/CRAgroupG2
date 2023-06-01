@@ -6,6 +6,18 @@ TEST(TestCaseName, TestName) {
 	EXPECT_TRUE(cal != nullptr);
 }
 
+
+TEST(TestCaseName, GetGopTest) {
+	Cal* cal = new Cal();
+
+	EXPECT_EQ(cal->GetGop(5, 7), 35);
+}
+
+TEST(TestCaseName, GetSumSumTest)
+{
+	EXPECT_EQ(6, Cal().getSumSum(1, 2, 3));
+}
+
 TEST(TestCaseName, TestName_MINUS1) {
 	Cal* cal = new Cal();
 	EXPECT_EQ(4,cal->getMinus(10,6));
