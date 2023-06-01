@@ -1,5 +1,9 @@
 class Cal {
 public:
+	int getSum(int a, int b)
+	{
+		return a + b;
+	}
 
 	int getSumSum(int a, int b, int c)
 	{
@@ -24,6 +28,6 @@ public:
   
   int GetGop(int param1, int param2)
 	{
-  return (param1 * param2);
+  	return (param1 * param2);
   }
 };

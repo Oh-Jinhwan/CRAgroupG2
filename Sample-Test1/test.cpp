@@ -6,6 +6,11 @@ TEST(TestCaseName, TestName) {
 	EXPECT_TRUE(cal != nullptr);
 }
 
+TEST(TestCaseName, getSum) {
+	Cal* cal = new Cal();
+	
+	EXPECT_EQ(5, cal->getSum(2, 3));
+}
 
 TEST(TestCaseName, GetGopTest) {
 	Cal* cal = new Cal();
