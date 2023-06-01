@@ -11,6 +11,16 @@ TEST(TestCaseName, GetSumSumTest)
 	EXPECT_EQ(6, Cal().getSumSum(1, 2, 3));
 }
 
+TEST(TestCaseName, TestName_MINUS1) {
+	Cal* cal = new Cal();
+	EXPECT_EQ(4,cal->getMinus(10,6));
+}
+
+TEST(TestCaseName, TestName_MINUS21) {
+	Cal* cal = new Cal();
+	EXPECT_EQ(-3, cal->getMinus(2, 5));
+}
+
 TEST(TestCaseName, ZegopTest) {
 	EXPECT_EQ(4, Cal().getZegop(2));
 }
